@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  margin: 0;
+  width: 100%;
+}
+
+header nav {
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul a {
+  padding: 10px;
+  width: 50%;
+}
+
+.google-account ul{
+  justify-content: flex-end;
+  align-items:;
+  width: 50%;
+}
