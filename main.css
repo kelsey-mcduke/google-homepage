@@ -1,22 +1,131 @@
+/* BASE STYLES*/
+body {
+  font-family: sans-serif;
+  color: #4d4d4d;
+}
+
+/* HEADER STYLING */
 header {
   display: flex;
-  margin: 0;
+  flex-flow: row;
+  justify-content: space-between;
   width: 100%;
 }
 
-header nav {
+nav ul {
+  display: flex;
   justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-header nav ul a {
+nav ul li {
   padding: 10px;
-  width: 50%;
 }
 
-.google-account ul{
+nav ul li a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.google-account ul {
+  display: flex;
   justify-content: flex-end;
-  align-items:;
-  width: 50%;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.google-account ul li {
+  padding: 10px;
+}
+
+.google-account ul li a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.google-account ul li a button {
+  background-color: #4285F4;
+  color: #f2f2f2;
+  font-weight: bold;
+  border-radius: 5%;
+  border: none;
+  padding: 5px;
+}
+
+/* MAIN BODY STYLING */
+.content-wrapper {
+  min-height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper form {
+  max-width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper form input {
+  width: 100%;
+  border-radius: 25px;
+  border-color: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+}
+
+.content-wrapper form button {
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto 10px;
+    display: flex;
+    margin-left: 30px;
+    max-width: 50%;
+    border: none;
+    color: #666666;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: #f2f2f2;
+  background-size: cover;
+  margin: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrapper ul {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.footer-wrapper ul li {
+  padding: 10px;
+}
+
+.footer-wrapper ul li a {
+  text-decoration: none;
+  color: #4d4d4d
+}
+
+.privacy a {
+  padding: 10px;
+  text-decoration: none;
+  color: #4d4d4d;
 }
