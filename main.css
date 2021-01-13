@@ -1,7 +1,17 @@
 /* BASE STYLES*/
+
 body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
   font-family: sans-serif;
   color: #4d4d4d;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  min-height: auto
 }
 
 /* HEADER STYLING */
@@ -9,7 +19,8 @@ header {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
+  margin: 5px;
 }
 
 nav ul {
@@ -37,6 +48,7 @@ nav ul li a {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-right: 10px;
 }
 
 .google-account ul li {
@@ -59,15 +71,18 @@ nav ul li a {
 
 /* MAIN BODY STYLING */
 .content-wrapper {
-  min-height: 500px;
+  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-
+/* .content-wrapper img {
+  padding-bottom: 2%;
+} */
 .content-wrapper form {
-  max-width: 50%;
+  /* max-width: 50%; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -75,9 +90,10 @@ nav ul li a {
 }
 
 .content-wrapper form input {
-  width: 100%;
+  /* width: 100%; */
   border-radius: 25px;
   border-color: #f2f2f2;
+  border-width: 1px;
   padding: 10px;
   margin: 10px;
 }
@@ -87,8 +103,8 @@ nav ul li a {
     padding: 5px;
     margin: auto 10px;
     display: flex;
-    margin-left: 30px;
-    max-width: 50%;
+    /* margin-left: 30px;
+    max-width: 50%; */
     border: none;
     color: #666666;
 }
@@ -97,8 +113,9 @@ nav ul li a {
 
 footer {
   background-color: #f2f2f2;
-  background-size: cover;
+  background-size: fill;
   margin: 0;
+  padding: 0;
 }
 
 .footer-wrapper {
@@ -106,6 +123,8 @@ footer {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-wrapper ul {
@@ -128,4 +147,4 @@ footer {
   padding: 10px;
   text-decoration: none;
   color: #4d4d4d;
-}
+} 
