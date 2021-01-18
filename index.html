@@ -2,47 +2,54 @@
 <html>
   <head>
     <title>Google-Homepage</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Store</a></li>
-        </ul>
-      </nav>
-      <div class="google-account">
-        <ul>
-          <li><a href="gmail.com" target=_blank>Gmail</a></li>
-          <li><a href="images.google.com" target=_blank>Images</a></li>
-          <li><a>Google Apps</a></li>
-          <li><a><button id="sign-in">Sign In</button></a></li>
-        </ul> 
-      </div>
-    </header>
-    <main>
-      <div class="content-wrapper">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <form>
-          <input type="text">
-          <button id="search-button">Google Search</button>
-          <button id="lucky-button">I'm Feeling Lucky</button>
-        </form>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-wrapper">
-        <ul>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">How Search Works</a></li>
-        </ul>
-        <div class="privacy">
-          <a href="#">Privacy</a>
+    <div class="grid-container">
+      <header>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+          </ul>
+        </nav>
+        <div class="google-account">
+          <ul>
+            <li><a href="gmail.com" target=_blank>Gmail</a></li>
+            <li><a href="images.google.com" target=_blank>Images</a></li>
+            <li><a>Google Apps</a></li>
+            <li><a><button id="sign-in">Sign In</button></a></li>
+          </ul> 
         </div>
-      </div>
-    </footer>
+      </header>
+      <main>
+        <div class="content-wrapper">
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+          <form>
+            <input type="text">
+            <button id="search-button">Google Search</button>
+            <button id="lucky-button">I'm Feeling Lucky</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-flex-wrapper">
+            <div class="business">
+              <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+              </ul>
+            </div> 
+            <div class="privacy">
+              <a href="#">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

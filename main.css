@@ -1,8 +1,10 @@
-/* BASE STYLES*/
+/* BASE STYLES */
+html {
+  height: 100%;
+}
 
 body {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   font-size: 16px;
   font-family: sans-serif;
   color: #4d4d4d;
@@ -10,8 +12,33 @@ body {
 }
 
 main {
-  flex: 1 0 auto;
-  min-height: auto
+  min-height: auto;
+}
+
+/* GRID BASE STYLE */
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+
+footer {
+  grid-area: footer;
 }
 
 /* HEADER STYLING */
@@ -70,19 +97,16 @@ nav ul li a {
 }
 
 /* MAIN BODY STYLING */
+
 .content-wrapper {
-  min-height: 100%;
-  height: 100%;
+  min-height: auto;
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-/* .content-wrapper img {
-  padding-bottom: 2%;
-} */
+
 .content-wrapper form {
-  /* max-width: 50%; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -90,48 +114,51 @@ nav ul li a {
 }
 
 .content-wrapper form input {
-  /* width: 100%; */
   border-radius: 25px;
   border-color: #f2f2f2;
   border-width: 1px;
   padding: 10px;
   margin: 10px;
+  min-width: 75%;
 }
 
 .content-wrapper form button {
     border-radius: 5px;
     padding: 5px;
-    margin: auto 10px;
+    margin: 20px 10px;
     display: flex;
-    /* margin-left: 30px;
-    max-width: 50%; */
     border: none;
     color: #666666;
 }
 
 /* FOOTER STYLING */
 
-footer {
-  background-color: #f2f2f2;
-  background-size: fill;
-  margin: 0;
-  padding: 0;
-}
-
 .footer-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+} 
+
+.footer-flex-wrapper {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.business {
+  max-width: 50%;
 }
 
-.footer-wrapper ul {
+.business ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content:space-around;
+  justify-content: flex-start;
   align-items: center;
   list-style-type: none;
+
 }
 
 .footer-wrapper ul li {
@@ -143,7 +170,13 @@ footer {
   color: #4d4d4d
 }
 
+.privacy {
+  max-width: 50%;
+}
+
 .privacy a {
+  display: flex;
+  justify-content: flex-end;
   padding: 10px;
   text-decoration: none;
   color: #4d4d4d;
